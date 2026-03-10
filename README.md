@@ -40,7 +40,7 @@ System & Application Level
 4. LED feedback on successful card scan
 5. Buzzer beep pattern on card scan
 6. Switch to toggle between operating modes
-7. Access control logic — match UID against stored list
+7. Access control logic - match UID against stored list
 8. Storing authorized UIDs in program memory
 9. Countdown lockout timer after failed scan attempts
 10. Power-on startup sequence
