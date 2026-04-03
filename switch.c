@@ -12,9 +12,9 @@ void delay_ms(unsigned int ms) {
 void main(void) {
     while (1) {
         if (SWITCH == 0) {
-            BUZZER = 0; // Assuming 0 is ON for your buzzer
+            BUZZER = 0; // BUZZER ON
         } else {
-            BUZZER = 1; // Assuming 1 is OFF
+            BUZZER = 1; // BUZZER OFF
         }
     }
 }
