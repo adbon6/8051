@@ -2,7 +2,7 @@
 
 sbit BUZZER = P1^0;
 
-void delay_ms(unsigned int ms)
+void delay(unsigned int ms)
 {
     unsigned int i, j;
     for (i = 0; i < ms; i++)
@@ -14,8 +14,8 @@ void main(void)
     while (1)
     {
         BUZZER = 1;  // Buzzer is Switched OFF
-        delay_ms(2000);
+        delay(2000);
         BUZZER = 0;  // Buzzer is Switched ON
-        delay_ms(2000);
+        delay(2000);
     }
 }
