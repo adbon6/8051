@@ -3,7 +3,7 @@
 sbit BUZZER = P1^0;
 sbit SWITCH = P1^5;
 
-void delay_ms(unsigned int ms) {
+void delay(unsigned int ms) {
     unsigned int i, j;
     for (i = 0; i < ms; i++)
         for (j = 0; j < 120; j++);
