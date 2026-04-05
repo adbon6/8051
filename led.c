@@ -14,8 +14,8 @@ void main(void)
     while (1)
     {
         LED = 0;  // Switches the LED ON
-        delay_ms(500);
+        delay(500);
         LED = 1;  // Switches the LED OFF
-        delay_ms(500);
+        delay(500);
     }
 }
