@@ -2,7 +2,7 @@
 
 sbit LED = P1^0;
 
-void delay_ms(unsigned int ms)
+void delay(unsigned int ms)
 {
     unsigned int i, j;
     for (i = 0; i < ms; i++)
