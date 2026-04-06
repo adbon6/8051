@@ -35,13 +35,7 @@ void main(void) {
 						LED1 = 1;
 						LED2 = 1;
 				}
-					
-					
-			
-					
-					
-					
-					
+		
     }
 }
 		
