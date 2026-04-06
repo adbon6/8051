@@ -1,4 +1,4 @@
-#include <reg51.h>
+#include <reg52.h>
 
 sbit LED1 = P1^0;
 sbit SWITCH1 = P1^5;
