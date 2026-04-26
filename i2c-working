@@ -1,0 +1,28 @@
+I2C - working---
+i2c has 2 lines data and clock , when clock is one i2c listens to data 
+on data pin , when clock is zero this is when data changes since data
+line can not change when clock is 1 
+
+---start i2c---
+to start i2c we have to let ic2 know when is 8051 ready to send data 
+usually i2c is in idle state (SDA = 1, SCL = 1)
+to start we need to pull the data line to 0 from (SDA = 1, SCL = 1)
+now ic2 can receive data from 8051 , but the data line can only change
+while SCL when clock is low , and when clock is high i2c receives data
+so to make sure that the next data is ready to send from 8052 we switch
+SCL to 0 
+
+---i2c start---
+	initial (SDA = 1, SCL = 1)
+	SDA = 0 ; i2c starts
+	SCL = 0 ; to get next data bit ready to send 
+
+---stop i2c---
+to stop i2c we need to create a low to high transition on SDA while SCL is high
+If SDA goes High before SCL goes High, the receiver might not see it as a 
+"Stop" signal; it might just see it as a normal data bit.
+
+---i2c stop---
+	make sure SDA = 0
+	make SCL = 1
+	make SDA = 1
